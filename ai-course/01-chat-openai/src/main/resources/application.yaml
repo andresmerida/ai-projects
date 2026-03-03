@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: 01-chat-openai
+
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-5.2
+          temperature: 1
