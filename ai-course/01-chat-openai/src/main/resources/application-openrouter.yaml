@@ -1,0 +1,10 @@
+### Open Rauter
+spring:
+  ai:
+    openai:
+      api-key: ${OPENROUTER_API_KEY}
+      base-url: https://openrouter.ai/api/v1
+      chat:
+        completions-path: /chat/completions
+        options:
+          model: qwen/qwen3-coder:free

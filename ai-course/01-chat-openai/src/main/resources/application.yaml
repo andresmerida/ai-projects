@@ -1,6 +1,8 @@
 spring:
   application:
     name: 01-chat-openai
+  config:
+    import: optional:application-local.properties
 
   ai:
     openai:
@@ -12,4 +14,9 @@ spring:
       base-url: https://api.openai.com
 logging:
   level:
-    org.springframework.ai.chat.client.advisor: DEBUG
+    org:
+      springframework:
+        ai:
+          chat:
+            client:
+              advisor: DEBUG

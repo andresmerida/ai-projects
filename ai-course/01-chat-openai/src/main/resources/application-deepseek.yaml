@@ -1,0 +1,10 @@
+## DeepSeek ##
+spring:
+  ai:
+    openai:
+      api-key: ${DEEPSEEK_API_KEY}  # you have to pay to get one
+      base-url: https://api.deepseek.com
+      chat:
+        completions-path: /v1/chat/completions
+        options:
+          model: deepseek-chat
